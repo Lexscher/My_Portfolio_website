@@ -48,3 +48,9 @@ body {
   background-color: #fff;
   color: ;
 }
+
+#particles-js {
+  height: 400px;
+  width: 80vw;
+  background-color: #000;
+}
