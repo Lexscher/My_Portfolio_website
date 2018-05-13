@@ -54,22 +54,22 @@ const particleParams = {
       value: "#00D1FF"
     },
     shape: {
-      type: "image",
+      type: "circle",
       stroke: {
-        width: 0,
-        color: "#000000"
+        width: 2,
+        color: "#00D1FF"
       },
       polygon: {
         nb_sides: 5
       },
       image: {
-        src: "http://assets.stickpng.com/thumbs/58443da1a6515b1e0ad75b7f.png",
+        src: "https://i.imgur.com/RYVm3qh.jpg",
         width: 100,
         height: 100
       }
     },
     opacity: {
-      value: 0.6,
+      value: 0.1,
       random: false,
       anim: {
         enable: false,
@@ -79,11 +79,11 @@ const particleParams = {
       }
     },
     size: {
-      value: 10,
+      value: 7,
       random: true,
       anim: {
         enable: false,
-        speed: 80,
+        speed: 10,
         size_min: 0.1,
         sync: false
       }
@@ -115,7 +115,7 @@ const particleParams = {
     events: {
       onhover: {
         enable: true,
-        mode: "repulse"
+        mode: ["bubble", "repulse"]
       },
       onclick: {
         enable: true,
@@ -131,14 +131,14 @@ const particleParams = {
         }
       },
       bubble: {
-        distance: 800,
-        size: 80,
+        distance: 200,
+        size: 4,
         duration: 2,
-        opacity: 0.8,
+        opacity: 1,
         speed: 3
       },
       repulse: {
-        distance: 125,
+        distance: 75,
         duration: 0.4
       },
       push: {
