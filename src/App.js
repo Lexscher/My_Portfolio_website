@@ -54,7 +54,7 @@ const particleParams = {
       value: "#00D1FF"
     },
     shape: {
-      type: "circle",
+      type: "image",
       stroke: {
         width: 0,
         color: "#000000"
@@ -63,7 +63,7 @@ const particleParams = {
         nb_sides: 5
       },
       image: {
-        src: "img/github.svg",
+        src: "http://assets.stickpng.com/thumbs/58443da1a6515b1e0ad75b7f.png",
         width: 100,
         height: 100
       }
@@ -79,7 +79,7 @@ const particleParams = {
       }
     },
     size: {
-      value: 4,
+      value: 10,
       random: true,
       anim: {
         enable: false,
