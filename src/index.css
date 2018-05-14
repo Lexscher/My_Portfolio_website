@@ -41,6 +41,41 @@ body {
   width: 100vw;
 }
 
+.projects-container {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto 15px;
+  padding: 3px 12px;
+}
+
+.project-image {
+  border: solid 1px #fff;
+  height: 400px;
+  box-shadow: 7px 7px 3px #60505e;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-family: "VT323", monospace;
+  color: #42c5fa;
+}
+
+.project-link-image {
+  background-color: #42c5fa;
+  height: 30px;
+}
 .game-container {
   width: 100vw;
   height: 100vh;
