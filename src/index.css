@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Alegreya Sans SC", sans-serif;
-  background-color: #000405;
+  background-color: #885757;
   color: #42c5fa;
 }
 
@@ -30,15 +30,70 @@ body {
 
 .links:hover {
   text-decoration: underline overline;
-  text-decoration-color: rgba(66, 197, 250, 8);
+  text-decoration-color: rgba(66, 197, 250, 0.8);
 }
 
 .content {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+}
+
+.about-alex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  height: 100%;
+}
+
+.main-header {
+  flex-basis: 20%;
+}
+
+.about-img {
+  border-radius: 8px;
+  background-color: #fff;
+  border: 4px double #42c5fa;
+  transition: 0.6s;
+}
+
+.particles {
+  height: 30vh;
+  flex-basis: 40%;
+  position: sticky;
+  overflow: visible;
+}
+
+.about-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  height: 100%;
+}
+
+.words {
+  flex-basis: 40%;
+}
+
+.about-link {
+  text-decoration: none;
+  color: #42c5fa;
+  transition: 0.8s;
+}
+
+.about-link:hover {
+  color: #000;
+  /* text-shadow: 1px 1px 2px #42c5fa, 0 0 25px #885757, 0 0 5px #000; */
 }
 
 .projects-container {
@@ -49,7 +104,7 @@ body {
 .project-container {
   display: flex;
   flex-direction: column;
-  margin: auto 15px;
+  margin: auto 15px 10px;
   padding: 3px 12px;
 }
 
@@ -80,6 +135,7 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
+  background-color: #000405;
 }
 
 #particles-js {

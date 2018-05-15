@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Particles from "react-particles-js";
-class Game extends Component {
+class Party extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -9,7 +9,7 @@ class Game extends Component {
   render() {
     return (
       <div className="game-container">
-        <Particles id="particles-js" params={particleParams}>
+        <Particles id="particles-js" params={particleParams} onRender>
           <h1 className="h">hello</h1>
         </Particles>
       </div>
@@ -130,4 +130,4 @@ const particleParams = {
   retina_detect: true
 };
 
-export default Game;
+export default Party;

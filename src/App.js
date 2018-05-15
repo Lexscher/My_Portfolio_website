@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import Particles from "react-particles-js";
-import Home from "./Home";
+import Stuff from "./Stuff";
 import AboutMe from "./AboutMe";
 import Portfolio from "./Portfolio";
-import Game from "./Game";
+import Party from "./Party";
 
 import "./App.css";
 
@@ -15,23 +15,23 @@ class App extends Component {
         <div className="container">
           <nav className="nav-bar">
             <Link className="links" to="/">
-              Home
+              About Alex
             </Link>
             <Link className="links" to="/alexander">
-              About Me
+              More Stuff
             </Link>
             <Link className="links" to="/projects">
               Projects I've worked on
             </Link>
             <Link className="links" to="/particles">
-              Check this out!
+              More Particles!!
             </Link>
           </nav>
           <div className="content">
-            <Route exact path="/" render={() => <Home />} />
-            <Route exact path="/alexander" render={() => <AboutMe />} />
+            <Route exact path="/" render={() => <AboutMe />} />
+            <Route exact path="/alexander" render={() => <Stuff />} />
             <Route exact path="/projects" render={() => <Portfolio />} />
-            <Route exact path="/particles" render={() => <Game />} />
+            <Route exact path="/particles" render={() => <Party />} />
           </div>
         </div>
       </Router>
