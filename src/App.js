@@ -15,13 +15,13 @@ class App extends Component {
         <div className="container">
           <nav className="nav-bar">
             <Link className="links" to="/">
-              About Alex
+              Alex.
             </Link>
             <Link className="links" to="/alexander">
-              More Stuff
+              Interwebs.
             </Link>
             <Link className="links" to="/projects">
-              Projects I've worked on
+              Projects.
             </Link>
             <Link className="links" to="/particles">
               More Particles!!

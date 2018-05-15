@@ -9,7 +9,7 @@ class Party extends Component {
   render() {
     return (
       <div className="game-container">
-        <Particles id="particles-js" params={particleParams} onRender>
+        <Particles id="particles-js" params={particleParams}>
           <h1 className="h">hello</h1>
         </Particles>
       </div>
@@ -22,7 +22,7 @@ class Party extends Component {
 const particleParams = {
   particles: {
     number: {
-      value: 40,
+      value: 20,
       density: {
         enable: true,
         value_area: 800
@@ -57,7 +57,7 @@ const particleParams = {
       }
     },
     size: {
-      value: 8,
+      value: 18,
       random: true,
       anim: {
         enable: false,
@@ -75,12 +75,12 @@ const particleParams = {
     },
     move: {
       enable: true,
-      speed: 3,
+      speed: 7,
       direction: "none",
       random: false,
       straight: false,
       out_mode: "out",
-      bounce: false,
+      bounce: true,
       attract: {
         enable: false,
         rotateX: 600,
@@ -110,13 +110,13 @@ const particleParams = {
       },
       bubble: {
         distance: 200,
-        size: 4,
+        size: 24,
         duration: 2,
         opacity: 1,
         speed: 3
       },
       repulse: {
-        distance: 75,
+        distance: 50,
         duration: 0.4
       },
       push: {

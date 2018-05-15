@@ -55,16 +55,17 @@ class AboutMe extends Component {
                 {" "}
                 Juilliard
               </a>'s pre-college. I probably would've been persuing a career in
-              music if my friends and I didn't form a robotics team junior year.
-              We had to convince our physics teacher to supervise us. We would
-              meet during lunch and after school so we can learn how to build,
-              and program a robot. The goal was to compete. My teacher had us
-              registered to enter a competition, but we had a late start(we made
-              the club halfway into the school year). Even with all the extra
-              time we put in, we were not ready by the deadline. That didn't
-              discourage us! We finished the robot a little while after, and I,
-              for one, was elated. This was the catalyst that catapulted me from
-              music into the wonderful world of technology!
+              music if my friends and I didn't form a robotics team during our
+              junior year. We had to convince our physics teacher to supervise
+              us. We would meet during lunch and after school so we can learn
+              how to build, and program a robot. The goal was to compete. My
+              teacher had us registered to enter a competition, but we had a
+              late start(we made the club halfway into the school year). Even
+              with all the extra time we put in, we were not ready by the
+              deadline. That didn't discourage us! We finished the robot a
+              little while after, and I, for one, was elated. This was the
+              catalyst that catapulted me from music into the wonderful world of
+              technology!
             </p>
           </div>
           <Particles className="particles" params={particleParams} />
