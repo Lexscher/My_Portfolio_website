@@ -101,6 +101,33 @@ body {
   text-shadow: 1px 1px 2px #42c5fa, 0 0 25px #885757, 0 0 5px #000;
 }
 
+.social-media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-item-container {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.skill-item {
+  cursor: pointer;
+  font-size: 40px;
+  margin: auto 15px;
+  transition: 0.3s;
+}
+
+.skill-item:hover {
+  font-size: 100px;
+  text-shadow: 10px 10px 20px #42c5fa, 0 0 100px #885757, 0 0 50px #000;
+}
+
 .projects-container {
   display: flex;
   overflow-x: scroll;

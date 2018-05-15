@@ -3,19 +3,51 @@ import React, { Component } from "react";
 class Stuff extends Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      interwebs: [
+        {
+          name: "LinkedIn",
+          link: "https://www.linkedin.com/in/alexanderschelchere/"
+        },
+        {
+          name: "GitHub",
+          link: "https://github.com/Lexscher"
+        },
+        {
+          name: "Twitter",
+          link: "https://twitter.com/Lexscher"
+        }
+      ],
+      skills: [
+        "JavaScript",
+        "Ruby on Rails",
+        "React",
+        "React Native",
+        "Node.js",
+        "Git",
+        "Express"
+      ]
+    };
   }
 
   render() {
+    let socials = this.state.interwebs.map(link => (
+      <a href={link.link} className="about-link">
+        {link.name}
+      </a>
+    ));
+    let skillsList = this.state.skills.map(skill => (
+      <p className="skill-item" key="skill">
+        {skill}
+      </p>
+    ));
     return (
-      <div>
-        <h1>Don't look at me sideways, BOY!</h1>
-        <h2>But if you don't know me, welcome to my website.</h2>
-        <p>
-          I'm a fullstack web developer with an appetite for knowledge.<br />
-          My background in customer service allowed me to learn different ways
-          to work with people to satisfy client needs.
-        </p>
+      <div className="connect">
+        <h1>Glad you were interested enough to view another page!</h1>
+        <h2>My Socials</h2>
+        <div className="social-media">{socials}</div>
+        <h2>A few of my skills...</h2>
+        <ul className="skill-item-container">{skillsList}</ul>
       </div>
     );
   }
